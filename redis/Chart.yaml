@@ -1,0 +1,16 @@
+apiVersion: v2
+name: redis
+version: 9.2.2
+appVersion: 5.0.5
+description: Open source, advanced key-value store
+keywords:
+- redis
+- keyvalue
+- database
+home: http://redis.io/
+icon: https://apps.okteto.com/redis/icon.png
+sources:
+- https://github.com/bitnami/bitnami-docker-redis
+maintainers:
+- name: okteto
+  email: hello@okteto.com

@@ -1,0 +1,4 @@
+password: okteto
+
+cluster:
+  enabled: false

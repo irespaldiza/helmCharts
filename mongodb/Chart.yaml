@@ -1,0 +1,19 @@
+apiVersion: v2
+name: mongodb
+version: 7.2.11
+appVersion: 4.0.12
+description: NoSQL document-oriented database that stores JSON-like documents
+keywords:
+- mongodb
+- database
+- nosql
+- cluster
+- replicaset
+- replication
+home: https://mongodb.org
+icon: https://apps.okteto.com/mongodb/icon.png
+sources:
+- https://github.com/bitnami/bitnami-docker-mongodb
+maintainers:
+- name: okteto
+  email: hello@okteto.com
