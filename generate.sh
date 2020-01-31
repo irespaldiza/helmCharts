@@ -1,5 +1,5 @@
 #!/bin/bash
-URL=${1:-'https://apps.okteto.com'}
+URL=${1:-'https://irespaldiza.github.io/helmCharts'}
 
 # fail if not in helm3
 helm version | grep -q v3
