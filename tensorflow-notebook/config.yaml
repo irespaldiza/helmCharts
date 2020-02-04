@@ -3,5 +3,5 @@ jupyter:
 
 service:
   type: ClusterIP
-    annotations:
+  annotations:
     dev.okteto.com/auto-ingress: "true"
