@@ -9,7 +9,6 @@ metadata:
     heritage: {{ .Release.Service }}
   annotations:
     dev.okteto.com/generate-host: "true"
-    ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
     - http:
@@ -18,7 +17,7 @@ spec:
             backend:
               serviceName: {{ include "tensorflow-notebook.fullname" . }}
               servicePort: 8888
-          - path: /tf
+          - path: /tf/
             backend:
               serviceName: {{ include "tensorflow-notebook.fullname" . }}
               servicePort: 6006
