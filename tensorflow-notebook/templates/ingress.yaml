@@ -13,11 +13,11 @@ spec:
   rules:
     - http:
         paths:
-          - path: /jupyer-notebook
+          - path: /
             backend:
               serviceName: {{ include "tensorflow-notebook.fullname" . }}
               servicePort: 8888
-          - path: /tensorboard
+          - path: /tb
             backend:
               serviceName: {{ include "tensorflow-notebook.fullname" . }}
               servicePort: 6006
