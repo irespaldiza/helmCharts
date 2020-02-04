@@ -29,7 +29,7 @@ spec:
             - jupyter
           args:
             - notebook
-            - --NotebookApp.base_url=/tn
+            - --NotebookApp.base_url=/jupyter-notebook
             - --allow-root      
           env:
             - name: PASSWORD
