@@ -39,11 +39,11 @@ spec:
                   key: password
           livenessProbe:
             httpGet:
-              path: /
+              path: /tn
               port: 8888
           readinessProbe:
             httpGet:
-              path: /
+              path: /tn
               port: 8888
           volumeMounts:
             - mountPath: /output/training_logs
