@@ -15,9 +15,9 @@ spec:
         paths:
           - path: /jupyer-notebook
             backend:
-              serviceName: {{ include "tensorflow-notebook.fullname" . }}-api
+              serviceName: {{ include "tensorflow-notebook.fullname" . }}
               servicePort: 8888
           - path: /tensorboard
             backend:
-              serviceName: {{ include "tensorflow-notebook.fullname" . }}-frontend
+              serviceName: {{ include "tensorflow-notebook.fullname" . }}
               servicePort: 6006
