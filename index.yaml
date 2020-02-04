@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   hello-world:
   - apiVersion: v2
-    created: "2020-02-04T12:42:46.345259+01:00"
+    created: "2020-02-04T12:52:13.394258+01:00"
     description: Hello world chart for Okteto Cloud
-    digest: f624938d30aaf98a8f611381a17249c47a2f4b996039064554dc3e97eb3709f9
+    digest: 6f9c2003855f4cbd0053f2e48d9ed9ad2e8b37fa5deac9a061820b2f223afd63
     icon: https://apps.okteto.com/hello-world/icon.png
     name: hello-world
     type: application
@@ -18,10 +18,10 @@ entries:
   mariadb:
   - apiVersion: v2
     appVersion: 10.3.18
-    created: "2020-02-04T12:42:46.347558+01:00"
+    created: "2020-02-04T12:52:13.396588+01:00"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system
-    digest: abf5d980df7cb038c7d1a33c4d7656b44dace5e2d55c02cbfee71b57cf64629b
+    digest: 27cf34e9530bb9de5ddc149c966fc0d06c4e59a43e7461b76e8dbbe497c8c84a
     home: https://mariadb.org
     icon: https://apps.okteto.com/mariadb/icon.png
     keywords:
@@ -42,9 +42,9 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: 4.0.12
-    created: "2020-02-04T12:42:46.350054+01:00"
+    created: "2020-02-04T12:52:13.399149+01:00"
     description: NoSQL document-oriented database that stores JSON-like documents
-    digest: 09b65edc63f5a851566cbbebbc1954c36816d596220df2cebad3fb6d5958de78
+    digest: dc7a97e4a462bdc5acc5ce14aa14beb5144fa76cce4a607ad3998b354bfe66a7
     home: https://mongodb.org
     icon: https://apps.okteto.com/mongodb/icon.png
     keywords:
@@ -66,7 +66,7 @@ entries:
   movies:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-02-04T12:42:46.354249+01:00"
+    created: "2020-02-04T12:52:13.403536+01:00"
     dependencies:
     - name: mongodb
       repository: https://apps.okteto.com
@@ -74,7 +74,7 @@ entries:
       - movies-database
       version: 7.x.x
     description: A Node + React application in Kubernetes
-    digest: 22bbcaa75489dc9a21d20083ee6acb08565801253a251982433769e1ece21586
+    digest: b0957818f74b431a88b134915a5b6111dd12ab5da37a79b6a16b930d8004e926
     icon: https://apps.okteto.com/movies/icon.png
     name: movies
     type: application
@@ -90,9 +90,9 @@ entries:
       manifest: frontend/okteto.yaml
   openfaas:
   - apiVersion: v2
-    created: "2020-02-04T12:42:46.357249+01:00"
+    created: "2020-02-04T12:52:13.406668+01:00"
     description: Enable Kubernetes as a backend for OpenFaaS (Functions as a Service)
-    digest: cd9116bdcfb2d194bedb60a2482c72c2f751b0844dc1e8bdb69c5d8d7a25dcc1
+    digest: 54f7635e2c093d91f544b74af9707e808c066fbd06e5aeecf9b8ed00bc8e72d0
     home: https://www.openfaas.com
     icon: https://apps.okteto.com/openfaas/icon.png
     keywords:
@@ -115,9 +115,9 @@ entries:
   postgresql:
   - apiVersion: v2
     appVersion: 11.5.0
-    created: "2020-02-04T12:42:46.35957+01:00"
+    created: "2020-02-04T12:52:13.409107+01:00"
     description: An object-relational database management system
-    digest: 003a36759b9f741a9ea23135b083e71a98606b6248d951da4ca00760d388cd12
+    digest: 8f88e40d1e8e479cf8f8fdff98a1ac6b06193aa9256b79f9369310edb86d35cf
     home: https://www.postgresql.org/
     icon: https://apps.okteto.com/postgresql/icon.png
     keywords:
@@ -139,9 +139,9 @@ entries:
   rabbitmq:
   - apiVersion: v2
     appVersion: 3.7.19
-    created: "2020-02-04T12:42:46.362058+01:00"
+    created: "2020-02-04T12:52:13.411598+01:00"
     description: Open source message broker software that implements AMQP
-    digest: 551fc03e94bfefce2ae6420ea8d312dff56e0d239bc5759a9479f0b400af1e46
+    digest: 0ad4ef0877b90d37750bf6340c061fad662e91f7e8d28889719257dc6575a3b4
     home: https://www.rabbitmq.com
     icon: https://apps.okteto.com/rabbitmq/icon.png
     keywords:
@@ -160,9 +160,9 @@ entries:
   redis:
   - apiVersion: v2
     appVersion: 5.0.5
-    created: "2020-02-04T12:42:46.365115+01:00"
+    created: "2020-02-04T12:52:13.414802+01:00"
     description: Open source, advanced key-value store
-    digest: 16c302c02a46ae48a5a3efd5db1bc3eeb1795ae6cc8dfb18ef55691d2064b506
+    digest: 098f5bdfa8d7abf097aee09ea7d0dbccbf5659a17df4cae915946505973b4a5d
     home: http://redis.io/
     icon: https://apps.okteto.com/redis/icon.png
     keywords:
@@ -181,9 +181,9 @@ entries:
   tensorflow-notebook:
   - apiVersion: v1
     appVersion: 1.6.0
-    created: "2020-02-04T12:42:46.36588+01:00"
+    created: "2020-02-04T12:52:13.415685+01:00"
     description: A Helm chart for tensorflow notebook and tensorboard
-    digest: 5c19a548925325f2932a226cbe6da2ae5ac416c72e424cdb5a44bca34e64ef7d
+    digest: 4142284c4116b7fb5fef6ba3576ce0b2e404196135a1559c3965d7938e4e5251
     home: https://www.tensorflow.org
     maintainers:
     - email: cheyang@163.com
@@ -198,7 +198,7 @@ entries:
   wordpress:
   - apiVersion: v2
     appVersion: 5.2.3
-    created: "2020-02-04T12:42:46.373141+01:00"
+    created: "2020-02-04T12:52:13.422518+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -207,7 +207,7 @@ entries:
       - wordpress-database
       version: 6.x.x
     description: Web publishing platform for building blogs and websites
-    digest: 64453834b7d747fb4df97f5ea39abe692eda2309af7c201ea801cc4f75d168a7
+    digest: f40769b76491127eadf751a63b4e0e415293985589e139863048b8579fef149e
     home: http://www.wordpress.com/
     icon: https://apps.okteto.com/wordpress/icon.png
     keywords:
@@ -227,4 +227,4 @@ entries:
     urls:
     - https://irespaldiza.github.io/helmCharts/wordpress/wordpress-7.3.9.tgz
     version: 7.3.9
-generated: "2020-02-04T12:42:46.343123+01:00"
+generated: "2020-02-04T12:52:13.391897+01:00"
