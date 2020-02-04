@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tb-{{ template "tensorflow-notebook.fullname" . }}
+  name: {{ include "tensorflow-notebook.fullname" . }}-tb
   labels:
     app: {{ template "tensorflow-notebook.name" . }}
     chart: {{ template "tensorflow-notebook.chart" . }}
@@ -19,5 +19,5 @@ spec:
       protocol: TCP
       name: tensorboard
   selector:
-    app: tb-{{ template "tensorflow-notebook.name" . }}
+    app: {{ include "tensorflow-notebook.fullname" . }}-tb
     release: {{ .Release.Name }}
