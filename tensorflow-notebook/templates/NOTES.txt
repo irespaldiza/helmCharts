@@ -1,6 +1,6 @@
 1. Get The applications URLs:
-  export NOTEBOOK=$(kubectl get ingress jupyter-{{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} -o jsonpath='{.spec.rules[].host}'
-  export DASHBOARD=$(kubectl get ingress dashboard-{{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} -o jsonpath='{.spec.rules[].host}'
+  export NOTEBOOK=$(kubectl get ingress jupyter-{{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} -o jsonpath='{.spec.rules[].host}')
+  export DASHBOARD=$(kubectl get ingress dashboard-{{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} -o jsonpath='{.spec.rules[].host}')
 
   echo "Notebook URL=https://$NOTEBOOK"
   echo "Tensorboard URL=https://$DASHBOARD"
