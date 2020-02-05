@@ -7,4 +7,4 @@
 
 2. Get credentials
 
-echo "Notebook password: $(kubectl get secrets {{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} | base64 --decode)"
+echo "Notebook password: $(kubectl get secrets {{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} -o jsonpath='{.data.password}' | base64 --decode)"
