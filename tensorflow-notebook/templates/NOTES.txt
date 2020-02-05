@@ -2,9 +2,9 @@
   export NOTEBOOK=$(kubectl get ingress okteto-jupyter-{{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} -o jsonpath='{.spec.rules[].host}')
   export DASHBOARD=$(kubectl get ingress okteto-dashboard-{{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} -o jsonpath='{.spec.rules[].host}')
 
-  echo "Notebook URL=https://$NOTEBOOK"
-  echo "Tensorboard URL=https://$DASHBOARD"
+  echo "Notebook URL: https://$NOTEBOOK"
+  echo "Tensorboard URL: https://$DASHBOARD"
 
 2. Get credentials
 
-echo "Notebook password: $(kubectl get secrets {{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} -o jsonpath='{.data.password}' | base64 --decode)"
+echo "Notebook Password: $(kubectl get secrets {{ template "tensorflow-notebook.fullname" .}} --namespace={{ .Release.Namespace }} -o jsonpath='{.data.password}' | base64 --decode)"
