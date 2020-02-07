@@ -25,6 +25,7 @@ spec:
           ports:
             - containerPort: 8888
               name: jupyter
+          workdir: /data
           command:
             - jupyter
           args:
