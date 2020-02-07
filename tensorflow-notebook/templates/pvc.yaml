@@ -14,7 +14,5 @@ spec:
   resources:
     requests:
       storage: {{ .Values.jupyter.persistence.size | quote }}
-  {{- if .Values.jupyter.storageClass }}
-  storageClassName: "{{ .Values.jupyter.storageClass }}"
-  {{- end }}
-{{- end -}}
+  {{ include "tensorflow-notebook.storageClass" . }}
+{{- end }}
