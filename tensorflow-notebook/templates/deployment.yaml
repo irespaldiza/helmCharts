@@ -73,6 +73,8 @@ spec:
           volumeMounts:
             - mountPath: /output/training_logs
               name: training-logs-volume
+            - mountPath: /root
+              name: jupyter-notebook-data
       volumes:
         - name: training-logs-volume
           emptyDir: {}
