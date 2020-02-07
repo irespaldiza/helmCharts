@@ -29,7 +29,6 @@ spec:
             - jupyter
           args:
             - notebook
-            - --generate-config
             - --allow-root      
           env:
             - name: PASSWORD
