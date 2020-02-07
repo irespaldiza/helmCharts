@@ -79,7 +79,7 @@ spec:
         - name: jupyter-notebook-data
         {{- if .Values.jupyter.persistence.enabled }}
           persistentVolumeClaim:
-            claimName: {{ .Values.persistence.existingClaim | default (include "wordpress.fullname" .) }}
+            claimName: {{ .Values.jupyter.persistence.existingClaim | default (include "tensorflow-notebook.fullname" .) }}
         {{- else }}
           emptyDir: {}
         {{ end }}

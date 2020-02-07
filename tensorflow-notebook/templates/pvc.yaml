@@ -1,4 +1,4 @@
-{{- if and .Values.jupyter.persistence.enabled (not .Values.persistence.existingClaim) }}
+{{- if and .Values.jupyter.persistence.enabled (not .Values.jupyter.persistence.existingClaim) }}
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
@@ -14,5 +14,7 @@ spec:
   resources:
     requests:
       storage: {{ .Values.jupyter.persistence.size | quote }}
-  {{ include "tensorflow-notebook.storageClass" . }}
+  {{- if .Values.jupyter.storageClass }}
+  storageClassName: "{{ .Values.jupyter.storageClass }}"
+  {{- end }}
 {{- end -}}
