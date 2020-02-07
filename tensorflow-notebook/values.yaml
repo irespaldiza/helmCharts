@@ -10,7 +10,7 @@ jupyter:
   persistence:
     enabled: true
     accessMode: ReadWriteOnce
-    storage: 1Gi
+    size: 1Gi
   resources: {}
   # limits:
   #  cpu: 100m
