@@ -29,6 +29,7 @@ spec:
             - jupyter
           args:
             - notebook
+            - --notebook-dir="/data"
             - --allow-root      
           env:
             - name: PASSWORD
@@ -47,7 +48,7 @@ spec:
           volumeMounts:
             - mountPath: /output/training_logs
               name: training-logs-volume
-            - mountPath: /root
+            - mountPath: /data
               name: jupyter-notebook-data
         - name: tensorboard
           image: "{{ .Values.tensorboard.image.repository }}:{{ .Values.tensorboard.image.tag }}"
