@@ -2,26 +2,22 @@ apiVersion: v1
 entries:
   hello-world:
   - apiVersion: v2
-    created: "2020-02-05T19:14:18.901529+01:00"
+    created: "2020-02-07T16:17:41.100228+01:00"
     description: Hello world chart for Okteto Cloud
-    digest: 52087a5e09044db7b1bf2c9d354ec2aaaa050026438eb64378ee46d1dd5322fb
+    digest: d1b4129607a417d9c750fec6ddcb4573fa4e54e65e4a7485cbf49f119fda4041
     icon: https://apps.okteto.com/hello-world/icon.png
     name: hello-world
     type: application
     urls:
-    - https://irespaldiza.github.io/helmCharts/hello-world/hello-world-0.1.0.tgz
+    - hello-world/hello-world-0.1.0.tgz
     version: 0.1.0
-    devs:
-    - name: hello-world
-      repo: https://github.com/okteto/go-getting-started
-      manifest: okteto.yaml
   mariadb:
   - apiVersion: v2
     appVersion: 10.3.18
-    created: "2020-02-05T19:14:18.904997+01:00"
+    created: "2020-02-07T16:17:41.108377+01:00"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system
-    digest: 9b815bff1bcaa99e4e5eb94882dec9fb2fa0d911a8c3c0eeea8d8e0e501cbdbd
+    digest: 4b6c073842c086be59153278d01fc839067ba67c86167a3065badf79f57c575d
     home: https://mariadb.org
     icon: https://apps.okteto.com/mariadb/icon.png
     keywords:
@@ -37,14 +33,14 @@ entries:
     - https://github.com/bitnami/bitnami-docker-mariadb
     - https://github.com/prometheus/mysqld_exporter
     urls:
-    - https://irespaldiza.github.io/helmCharts/mariadb/mariadb-6.10.1.tgz
+    - mariadb/mariadb-6.10.1.tgz
     version: 6.10.1
   mongodb:
   - apiVersion: v2
     appVersion: 4.0.12
-    created: "2020-02-05T19:14:18.90945+01:00"
+    created: "2020-02-07T16:17:41.116017+01:00"
     description: NoSQL document-oriented database that stores JSON-like documents
-    digest: 6480830ac4dabca363f3c84c17ee0903f1d7567acc6c83ce51d899c5408839ea
+    digest: 2e7d7bd9ef876ab5569dff1cce3fff812529057036255f5adad1f8c3eff25512
     home: https://mongodb.org
     icon: https://apps.okteto.com/mongodb/icon.png
     keywords:
@@ -61,12 +57,12 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-mongodb
     urls:
-    - https://irespaldiza.github.io/helmCharts/mongodb/mongodb-7.2.11.tgz
+    - mongodb/mongodb-7.2.11.tgz
     version: 7.2.11
   movies:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-02-05T19:14:18.917911+01:00"
+    created: "2020-02-07T16:17:41.129056+01:00"
     dependencies:
     - name: mongodb
       repository: https://apps.okteto.com
@@ -74,25 +70,18 @@ entries:
       - movies-database
       version: 7.x.x
     description: A Node + React application in Kubernetes
-    digest: 43994692cdadb26c79a41182adec49352f640acb7cb1bc524e4df84908419bcd
+    digest: 164066f070883d778dd3fa6647d23b216db97b35779c2307dd2bd0d09ce695d8
     icon: https://apps.okteto.com/movies/icon.png
     name: movies
     type: application
     urls:
-    - https://irespaldiza.github.io/helmCharts/movies/movies-0.1.0.tgz
+    - movies/movies-0.1.0.tgz
     version: 0.1.0
-    devs:
-    - name: api
-      repo: https://github.com/okteto/movies
-      manifest: api/okteto.yaml
-    - name: frontend
-      repo: https://github.com/okteto/movies
-      manifest: frontend/okteto.yaml
   openfaas:
   - apiVersion: v2
-    created: "2020-02-05T19:14:18.925111+01:00"
+    created: "2020-02-07T16:17:41.141647+01:00"
     description: Enable Kubernetes as a backend for OpenFaaS (Functions as a Service)
-    digest: 260f0910a11254d5e8cbda2d7b37b221b05f5ef19f2f8390e728b4b6fe776f96
+    digest: 8c6a34b59c4826b5b8555ceb88f1c1bd205b29e2c56869f347b00cfe2b3e5bfe
     home: https://www.openfaas.com
     icon: https://apps.okteto.com/openfaas/icon.png
     keywords:
@@ -110,14 +99,14 @@ entries:
     - https://github.com/openfaas/faas
     - https://github.com/openfaas/faas-netes
     urls:
-    - https://irespaldiza.github.io/helmCharts/openfaas/openfaas-5.4.0.tgz
+    - openfaas/openfaas-5.4.0.tgz
     version: 5.4.0
   postgresql:
   - apiVersion: v2
     appVersion: 11.5.0
-    created: "2020-02-05T19:14:18.9293+01:00"
+    created: "2020-02-07T16:17:41.149424+01:00"
     description: An object-relational database management system
-    digest: db5384762b25dc04dc3be11359905c3e48945455c299ca005fbc39156dac11ec
+    digest: d5494283377484cb16c212ba74c1887227920ae9b3c593ef32324527536b6285
     home: https://www.postgresql.org/
     icon: https://apps.okteto.com/postgresql/icon.png
     keywords:
@@ -134,14 +123,14 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-postgresql
     urls:
-    - https://irespaldiza.github.io/helmCharts/postgresql/postgresql-6.3.12.tgz
+    - postgresql/postgresql-6.3.12.tgz
     version: 6.3.12
   rabbitmq:
   - apiVersion: v2
     appVersion: 3.7.19
-    created: "2020-02-05T19:14:18.933529+01:00"
+    created: "2020-02-07T16:17:41.157721+01:00"
     description: Open source message broker software that implements AMQP
-    digest: c071088309b8bbf987f451857b6190139c67e2a11f3840679a7a340bd2099ec2
+    digest: 6d2e0862a76152c837e37be4c7adfd31156b7cf259dcc31b271f824af42d0ba6
     home: https://www.rabbitmq.com
     icon: https://apps.okteto.com/rabbitmq/icon.png
     keywords:
@@ -155,14 +144,14 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-rabbitmq
     urls:
-    - https://irespaldiza.github.io/helmCharts/rabbitmq/rabbitmq-6.8.2.tgz
+    - rabbitmq/rabbitmq-6.8.2.tgz
     version: 6.8.2
   redis:
   - apiVersion: v2
     appVersion: 5.0.5
-    created: "2020-02-05T19:14:18.940035+01:00"
+    created: "2020-02-07T16:17:41.169464+01:00"
     description: Open source, advanced key-value store
-    digest: 677644e0e7abd291aa9b8abf18e4e823625e85b23dff09f47c8e2ef3c72e2e72
+    digest: bc2b9af8a2fb88201363d41e3473ef880dd39e9e1ac6bac06042b500c9bedf7a
     home: http://redis.io/
     icon: https://apps.okteto.com/redis/icon.png
     keywords:
@@ -176,14 +165,14 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-redis
     urls:
-    - https://irespaldiza.github.io/helmCharts/redis/redis-9.2.2.tgz
+    - redis/redis-9.2.2.tgz
     version: 9.2.2
   tensorflow-notebook:
   - apiVersion: v1
     appVersion: 1.6.0
-    created: "2020-02-05T19:14:18.941861+01:00"
+    created: "2020-02-07T16:17:41.171476+01:00"
     description: A Helm chart for tensorflow notebook and tensorboard
-    digest: 34604fa07fcc9a9225daaf4d17dc8335cbae8a492e0675b6612bfb68a8c972b0
+    digest: 7b4cb9e2626a0dc59aefac178f81568519d2fa79c875eb5c4cd9ebc3e3d600bb
     home: https://www.tensorflow.org
     icon: https://apps.okteto.com/tensorflow-notebook/icon.png
     maintainers:
@@ -194,12 +183,12 @@ entries:
     - https://github.com/tensorflow/tensorflow
     - https://github.com/jupyter
     urls:
-    - https://irespaldiza.github.io/helmCharts/tensorflow-notebook/tensorflow-notebook-0.1.3.tgz
+    - tensorflow-notebook/tensorflow-notebook-0.1.3.tgz
     version: 0.1.3
   wordpress:
   - apiVersion: v2
     appVersion: 5.2.3
-    created: "2020-02-05T19:14:18.956664+01:00"
+    created: "2020-02-07T16:17:41.194945+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -208,7 +197,7 @@ entries:
       - wordpress-database
       version: 6.x.x
     description: Web publishing platform for building blogs and websites
-    digest: 04fa6b8e17e216adab6c020a83743d875b72e57a33ffa24ee528667ebd030d76
+    digest: 1dfed2717040825e266a3e3c20fee5639b77b36772ea0affe3ffbf336eecf7f7
     home: http://www.wordpress.com/
     icon: https://apps.okteto.com/wordpress/icon.png
     keywords:
@@ -226,6 +215,6 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-wordpress
     urls:
-    - https://irespaldiza.github.io/helmCharts/wordpress/wordpress-7.3.9.tgz
+    - wordpress/wordpress-7.3.9.tgz
     version: 7.3.9
-generated: "2020-02-05T19:14:18.897407+01:00"
+generated: "2020-02-07T16:17:41.091734+01:00"
