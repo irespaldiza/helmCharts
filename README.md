@@ -1,3 +1,3 @@
 # Personal Application Catalog
 
-- Okteto_crds
+- crds_okteto
