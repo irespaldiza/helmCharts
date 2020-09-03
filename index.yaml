@@ -1,14 +1,25 @@
 apiVersion: v1
 entries:
+  crds_okteto:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2020-09-03T19:11:57.488093+02:00"
+    description: A Helm chart for Kubernetes
+    digest: b9bfac753668d989efe5f670b9fc9c725f5fd859bd267bdca84b4a8e8556e8e5
+    name: crds_okteto
+    type: application
+    urls:
+    - https://apps.okteto.com/crds_okteto/crds_okteto-0.1.0.tgz
+    version: 0.1.0
   okteto_CRDs:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-03T18:59:11.133239+02:00"
+    created: "2020-09-03T19:11:57.502703+02:00"
     description: A Helm chart for Kubernetes
-    digest: 81079f0d475265af4f4f834fc1285b21e6833e25d42c92f05dfcbddbdc87fa63
-    name: okteto_crds
+    digest: 5e232c4392a289a58f8d9308d7458aba0638eaad14ab4900d59d98a9874386aa
+    name: okteto_CRDs
     type: application
     urls:
-    - https://apps.okteto.com/okteto_crds/okteto_crds-0.1.0.tgz
+    - https://apps.okteto.com/crds_okteto/okteto_CRDs-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-03T18:59:11.117848+02:00"
+generated: "2020-09-03T19:11:57.458034+02:00"
