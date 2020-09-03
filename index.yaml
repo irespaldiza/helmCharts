@@ -9,6 +9,6 @@ entries:
     name: okteto_CRDs
     type: application
     urls:
-    - https://apps.okteto.com/okteto_crds/okteto_CRDs-0.1.0.tgz
+    - https://apps.okteto.com/okteto_crds/okteto_crds-0.1.0.tgz
     version: 0.1.0
 generated: "2020-09-03T18:59:11.117848+02:00"
