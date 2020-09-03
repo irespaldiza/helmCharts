@@ -1,5 +1,0 @@
-rabbitmq:
-  username: okteto
-  password: okteto
-
-rbacEnabled: false

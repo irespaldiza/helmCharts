@@ -1,5 +1,5 @@
 #!/bin/bash
-URL=${1:-'https://irespaldiza.github.io/helmCharts'}
+URL=${1:-'https://apps.okteto.com'}
 
 # fail if not in helm3
 helm version | grep -q v3
@@ -21,5 +21,3 @@ for d in */ ; do
 done
 
 helm repo index --url $URL .
-yq w -s devs.yaml index.yaml > index.yaml.generated
-mv index.yaml.generated index.yaml
