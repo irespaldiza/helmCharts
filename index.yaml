@@ -2,10 +2,20 @@ apiVersion: v1
 entries:
   crds_okteto:
   - apiVersion: v2
-    appVersion: 0.1.1
-    created: "2020-09-03T19:42:23.15042+02:00"
+    appVersion: 0.1.2
+    created: "2020-09-03T22:00:53.941458+02:00"
     description: A Helm chart for Kubernetes
-    digest: 96cee3189dff75aca3768451eeab3235561868eab6f973c8c74af703c21e3ef4
+    digest: 3621ea84a67d45a3aff0c2799288bba16c4517ee6a99ca7b35acd50f94ba9e84
+    name: crds_okteto
+    type: application
+    urls:
+    - https://irespaldiza.github.io/helmCharts/crds_okteto/crds_okteto-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2020-09-03T22:00:53.706939+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 52920592e2285e88ddffaa65343f1fd5f3d9b99485050cc292ed167004054927
     name: crds_okteto
     type: application
     urls:
@@ -13,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2020-09-03T19:42:23.079807+02:00"
+    created: "2020-09-03T22:00:53.61838+02:00"
     description: A Helm chart for Kubernetes
     digest: b800d913a9602c82df2a6b2762297808484aca7b7cb8d06929a4c9533b585c68
     name: crds_okteto
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://irespaldiza.github.io/helmCharts/crds_okteto/crds_okteto-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-03T19:42:23.038127+02:00"
+generated: "2020-09-03T22:00:53.576934+02:00"
