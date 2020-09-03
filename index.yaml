@@ -6,7 +6,7 @@ entries:
     created: "2020-09-03T18:59:11.133239+02:00"
     description: A Helm chart for Kubernetes
     digest: 81079f0d475265af4f4f834fc1285b21e6833e25d42c92f05dfcbddbdc87fa63
-    name: okteto_CRDs
+    name: okteto_crds
     type: application
     urls:
     - https://apps.okteto.com/okteto_crds/okteto_crds-0.1.0.tgz
