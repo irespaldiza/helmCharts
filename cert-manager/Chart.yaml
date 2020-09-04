@@ -3,4 +3,4 @@ appVersion: v0.16.1
 description: A Helm chart for cert-manager crds
 icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
 version: v0.1.0
-name: cert-manager-crds
+name: cert-manager
