@@ -1,14 +1,25 @@
 apiVersion: v1
 entries:
+  cert-manager-crds:
+  - apiVersion: v2
+    appVersion: v0.16.1
+    created: "2020-09-04T18:36:46.815429+02:00"
+    description: A Helm chart for cert-manager crds
+    digest: 683ae46f9b6c1cf5d9c0cdf645ee22315d8437199d59c7cbc5fb7f9d4ca05e21
+    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
+    name: cert-manager-crds
+    urls:
+    - https://irespaldiza.github.io/helmCharts/cert-manager-crds/cert-manager-crds-v0.1.0.tgz
+    version: v0.1.0
   crds-okteto:
   - apiVersion: v2
     appVersion: 0.1.4
-    created: "2020-09-03T22:15:41.629352+02:00"
+    created: "2020-09-04T18:36:46.816215+02:00"
     description: A Helm chart for Kubernetes
-    digest: 9b4c5cc728c9fed882aef96a51ec31ecf62bccb301e32ca9b0dbe1770486e1ba
+    digest: e832099bec534081faf2c7c32af9848b2bca0c0a84c4940b4dbf25e4950c9153
     name: crds-okteto
     type: application
     urls:
     - https://irespaldiza.github.io/helmCharts/crds-okteto/crds-okteto-0.1.4.tgz
     version: 0.1.4
-generated: "2020-09-03T22:15:41.628611+02:00"
+generated: "2020-09-04T18:36:46.805648+02:00"
