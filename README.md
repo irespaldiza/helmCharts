@@ -1,5 +1,5 @@
 # Personal Application Catalog
 
-- crds_okteto v0.1.1
+- crds_okteto
 - cert-manager-crds
-
+- k8s-termination-handler
