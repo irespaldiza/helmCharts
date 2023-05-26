@@ -1,119 +1,13 @@
 apiVersion: v1
 entries:
-  cert-manager:
-  - apiVersion: v2
-    appVersion: v0.7.6
-    created: "2021-01-29T21:44:14.535279+01:00"
-    description: A Helm chart for cert-manager crds
-    digest: 2b0ff6cd6eca2bd12a157fc25dc8d80c6a24f380ec30f114ee56e2b3dae1acc8
-    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
-    name: cert-manager
-    urls:
-    - https://irespaldiza.github.io/helmCharts/cert-manager/cert-manager-0.2.0.tgz
-    version: 0.2.0
-  - apiVersion: v2
-    appVersion: v0.7.6
-    created: "2021-01-29T21:44:14.537507+01:00"
-    description: A Helm chart for cert-manager crds
-    digest: 9c2c7e028383f37eff497512a3a9f00677c845a266ec090924b69291bfa6886f
-    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
-    name: cert-manager
-    urls:
-    - https://irespaldiza.github.io/helmCharts/cert-manager2/cert-manager-0.2.0.tgz
-    version: 0.2.0
-  cert-manager2:
-  - apiVersion: v2
-    appVersion: v0.7.6
-    created: "2021-01-29T21:44:14.542262+01:00"
-    description: A Helm chart for cert-manager crds
-    digest: b185771cb30e8f290578e78f346e4a6e5bc81e789fbea4333b5326f59474ad74
-    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
-    name: cert-manager2
-    urls:
-    - https://irespaldiza.github.io/helmCharts/cert-manager2/cert-manager2-0.2.0.tgz
-    version: 0.2.0
-  crds-okteto:
-  - apiVersion: v2
-    appVersion: 0.7.6
-    created: "2021-01-29T21:44:14.56116+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 3c40ef1414bbd38e3136b58cf3f6fcac295224f3caf9306435189919a46b945c
-    name: crds-okteto
-    type: application
-    urls:
-    - https://irespaldiza.github.io/helmCharts/crds-okteto/crds-okteto-0.7.6.tgz
-    version: 0.7.6
-  - apiVersion: v2
-    appVersion: 0.1.6
-    created: "2021-01-29T21:44:14.547671+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 8ae826333d4a413e60f45a2a51a4f7e8fcd333309118cadd1898abfa3dcc181c
-    name: crds-okteto
-    type: application
-    urls:
-    - https://irespaldiza.github.io/helmCharts/crds-okteto/crds-okteto-0.1.6.tgz
-    version: 0.1.6
-  - apiVersion: v2
-    appVersion: 0.1.5
-    created: "2021-01-29T21:44:14.544935+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 9343292d58b51929371b944fcdf5c1065e3d27e3678110f795395935b07996b8
-    name: crds-okteto
-    type: application
-    urls:
-    - https://irespaldiza.github.io/helmCharts/crds-okteto/crds-okteto-0.1.5.tgz
-    version: 0.1.5
-  - apiVersion: v2
-    appVersion: 0.1.4
-    created: "2021-01-29T21:44:14.543722+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 98190399cf9618d4756c133dc7b7371e9f2d670ed3b182734ad759b0acc5bbb4
-    name: crds-okteto
-    type: application
-    urls:
-    - https://irespaldiza.github.io/helmCharts/crds-okteto/crds-okteto-0.1.4.tgz
-    version: 0.1.4
-  k8s-node-termination-handler:
-  - apiVersion: v2
-    appVersion: "1.0"
-    created: "2021-01-29T21:44:14.562272+01:00"
-    description: A Helm chart for Kubernetes that provides an adapter for translating GCE node termination events to graceful pod terminations in Kubernetes.
-    digest: 6a08689d2a71046337ab4230af4b087c731d03fea80077f62135e7911871ef5c
-    name: k8s-node-termination-handler
-    urls:
-    - https://irespaldiza.github.io/helmCharts/k8s-node-termination-handler/k8s-node-termination-handler-0.1.0.tgz
-    version: 0.1.0
-  metric-server:
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2021-01-29T21:44:14.563137+01:00"
-    description: A Helm chart for Kubernetes
-    digest: f0f7b8e0c31f0dc825d11ffc5c40ca79dd32b2d56238a50ff92514752d1679ea
-    name: metric-server
-    type: application
-    urls:
-    - https://irespaldiza.github.io/helmCharts/metric-server/metric-server-0.1.0.tgz
-    version: 0.1.0
-  nginx-ingress:
+  velero-backup-notification:
   - apiVersion: v1
-    appVersion: v0.34.1
-    created: "2021-01-29T21:44:14.566781+01:00"
-    description: An nginx Ingress controller that uses ConfigMap to store the nginx configuration.
-    digest: 416c1bb58caf02f0baa9c036edb5f2649a0a7da337b76ff178525098d50d5714
-    home: https://github.com/kubernetes/ingress-nginx
-    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
-    keywords:
-    - ingress
-    - nginx
-    kubeVersion: '>=1.10.0-0'
-    maintainers:
-    - name: ChiefAlexander
-    - email: Trevor.G.Wood@gmail.com
-      name: taharah
-    name: nginx-ingress
-    sources:
-    - https://github.com/kubernetes/ingress-nginx
+    appVersion: "1.0"
+    created: "2023-05-26T18:12:38.635007+02:00"
+    description: A Helm chart to send email/Slack notifications for Velero backups/restores
+    digest: 7c9233483f5ea231f579639fc460a7065f8d71e91d6a31daaccd4c9cb6b4d9b1
+    name: velero-backup-notification
     urls:
-    - https://irespaldiza.github.io/helmCharts/nginx-ingress/nginx-ingress-1.41.2.tgz
-    version: 1.41.2
-generated: "2021-01-29T21:44:14.533116+01:00"
+    - https://irespaldiza.github.io/helmCharts/velero-notifications/velero-backup-notification-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-05-26T18:12:38.634335+02:00"
