@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backups-last-resource-version
+data:
+  resourceVersion: "0"
+
