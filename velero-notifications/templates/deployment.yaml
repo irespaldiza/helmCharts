@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: velero-backup-notification
-  namespace: velero
 spec:
   replicas: 1
   strategy:
